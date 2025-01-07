@@ -20,7 +20,9 @@ keywords = [
 ]
 
 [dependencies]
+doc-comment = "0.3.3"
 strsim = "0.11.1"
 
 [dev-dependencies]
+doc-comment = "0.3.3"
 rstest = "0.24.0"

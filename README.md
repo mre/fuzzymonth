@@ -28,7 +28,7 @@ use fuzzymonth::{parse_month, Month};
 
 fn main() {
     // Standard formats
-    assert_eq!(parse_month("january").unwrap(), Month::January);
+    assert_eq!(parse_month("January").unwrap(), Month::January);
     assert_eq!(parse_month("feb").unwrap(), Month::February);
     
     // International support

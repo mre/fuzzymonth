@@ -26,6 +26,16 @@
 #![warn(clippy::nursery)]
 #![warn(clippy::cargo)]
 
+#[cfg(test)]
+#[macro_use]
+extern crate doc_comment;
+
+#[cfg(test)]
+doctest!("../README.md");
+
+#[cfg(doctest)]
+doc_comment::doctest!("../../README.md");
+
 use strsim::normalized_levenshtein;
 
 /// Month of the year
