@@ -8,16 +8,7 @@ homepage = "https://github.com/mre/fuzzymonth"
 version = "0.1.0"
 edition = "2021"
 categories = ["text-processing", "parsing", "date-and-time"]
-keywords = [
-    "fuzzy",
-    "month",
-    "parser",
-    "date",
-    "time",
-    "parsing",
-    "text",
-    "processing",
-]
+keywords = ["fuzzy", "month", "parser", "date", "time"]
 
 [dependencies]
 doc-comment = "0.3.3"
