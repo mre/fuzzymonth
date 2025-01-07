@@ -49,6 +49,44 @@ fn main() {
 }
 ```
 
+## Command Line Interface
+
+`fuzzymonth` comes with a friendly interactive CLI tool for testing month parsing:
+
+```bash
+# Install from crates.io
+cargo install fuzzymonth
+
+# Or run directly from source
+cargo run
+```
+
+You'll get an interactive prompt where you can test various month formats:
+
+```bash
+🗓  Fuzzy Month Parser
+Type a month name (any format) and press Enter
+Press Ctrl+C or Enter an empty line to exit
+
+→ january
+✓ January (1)
+
+→ feb
+✓ February (2)
+
+→ septembr
+✓ September (9)
+
+→ enero
+✓ January (1)
+
+→ xyz
+✗ Invalid input: xyz
+
+→ [Enter]
+👋 Goodbye!
+```
+
 ## How It Works
 
 The library uses a multi-step approach to parse month names:
